@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ScannedBarCodeActivity">
+    tools:context=".ScanBarCodeActivity">
 
     <SurfaceView
         android:id="@+id/surfaceView"
@@ -23,7 +23,6 @@
         android:text="No Barcode Detected"
         android:textColor="@android:color/white"
         android:textSize="20sp" />
-
 
     <Button
         android:id="@+id/btnAction"

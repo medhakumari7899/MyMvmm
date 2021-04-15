@@ -17,7 +17,7 @@
         android:layout_height="@dimen/_100sdp"/>
 
         <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="360dp"
+            android:layout_width="wrap_content"
             android:layout_below="@+id/img"
             android:layout_marginLeft="@dimen/_20sdp"
             android:layout_marginRight="@dimen/_20sdp"
@@ -29,10 +29,10 @@
             android:textColor="#7C6A6A"
             android:textColorHint="#7C6A6A"
             android:hint="Email"
-            android:layout_height="52dp"/>
+            android:layout_height="wrap_content"/>
 
     <com.google.android.material.textfield.TextInputEditText
-        android:layout_width="360dp"
+        android:layout_width="wrap_content"
         android:layout_below="@+id/EmailIDTextInputEditText"
         android:layout_marginLeft="@dimen/_20sdp"
         android:layout_marginRight="@dimen/_20sdp"
@@ -44,7 +44,7 @@
         android:textColor="#7C6A6A"
         android:textColorHint="#7C6A6A"
         android:hint="Password"
-        android:layout_height="52dp"/>
+        android:layout_height="wrap_content"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:id="@+id/linear"
@@ -102,12 +102,16 @@
             android:src="@drawable/facebook"
             android:id="@+id/facebook"
             android:layout_height="@dimen/_30sdp"/>
-        <ImageView
+        <com.google.android.gms.common.SignInButton
             android:layout_width="@dimen/_30sdp"
-            android:src="@drawable/google"
-            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:id="@+id/sign_in_button"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/google"
             android:layout_toRightOf="@+id/facebook"
-            android:layout_height="@dimen/_30sdp"/>
+            >
+
+        </com.google.android.gms.common.SignInButton>
 
     </RelativeLayout>
 

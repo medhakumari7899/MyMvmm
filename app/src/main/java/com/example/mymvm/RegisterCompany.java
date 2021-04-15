@@ -18,7 +18,7 @@ public class RegisterCompany extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(RegisterCompany.this,SearchCountry.class);
+                Intent intent=new Intent(RegisterCompany.this,MainActivity.class);
                 startActivity(intent);
             }
         });

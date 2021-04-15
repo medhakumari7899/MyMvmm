@@ -13,16 +13,21 @@
         android:layout_marginTop="@dimen/_30sdp"
         android:orientation="horizontal"
         android:layout_height="@dimen/_50sdp">
+        <com.hbb20.CountryCodePicker
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            app:ccp_textSize="@dimen/_16sdp"
+            app:ccp_showFullName="true"
+            app:ccp_autoDetectCountry="true"
+            app:ccp_showPhoneCode="false"
+            app:ccp_showNameCode="false"
+            app:ccpDialog_showTitle="true"
+            android:id="@+id/ccp"
+            android:gravity="center" />
 
-    <com.hbb20.CountryCodePicker
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="0.5"
-        app:ccp_textSize="@dimen/_16sdp"
-        app:ccp_autoDetectCountry="true"
-        app:ccp_showNameCode="true"
-        android:id="@+id/ccp"
-        android:gravity="center" />
+
+
 
 
         <ImageView
@@ -39,7 +44,10 @@
         android:maxLength="9"
         android:hint="Search"
         android:inputType="text"
-        android:textSize="@dimen/_16sdp"/>
+        android:textSize="@dimen/_16sdp"
+        >
+
+    </EditText>
 
     </LinearLayout>
 

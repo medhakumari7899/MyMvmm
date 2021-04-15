@@ -6,5 +6,6 @@ Email
 </string>
     <string name="scan_barcode">scan_barcode</string>
     <string name="send_email">send_email</string>
-
+    <string name="facebook_app_id">789280362015659</string>
+    <string name="fb_login_protocol_scheme">fb789280362015659</string>
 </resources>

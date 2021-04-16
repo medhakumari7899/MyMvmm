@@ -102,6 +102,16 @@
             android:src="@drawable/facebook"
             android:id="@+id/facebook"
             android:layout_height="@dimen/_30sdp"/>
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp" />
+
         <com.google.android.gms.common.SignInButton
             android:layout_width="@dimen/_30sdp"
             android:layout_height="@dimen/_30sdp"

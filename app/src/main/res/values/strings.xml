@@ -6,7 +6,8 @@ Email
 </string>
     <string name="scan_barcode">scan_barcode</string>
     <string name="send_email">send_email</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="facebook_app_id">756645771878000</string>
+    <string name="fb_login_protocol_scheme">fb756645771878000</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="facebook_app_id">789280362015659</string>
     <string name="fb_login_protocol_scheme">fb789280362015659</string>

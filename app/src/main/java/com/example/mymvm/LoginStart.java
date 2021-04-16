@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.facebook.AccessToken;
+import com.facebook.AccessTokenTracker;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
@@ -22,42 +24,47 @@ import com.google.android.gms.auth.api.signin.GoogleSignInResult;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.material.textfield.TextInputEditText;
+
+import java.sql.Array;
+import java.util.Arrays;
 
 public class LoginStart extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener {
 
     SignInButton signInButton;
     private GoogleApiClient googleApiClient;
     TextView textView;
-    CallbackManager callbackManager;
+    private LoginButton b;
+    TextInputEditText e;
+    private CallbackManager c;
     private static final int RC_SIGN_IN = 1;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_start);
-        callbackManager = CallbackManager.Factory.create();
-        LoginButton loginButton = (LoginButton)findViewById(R.id.flogin_button);
-        loginButton.setReadPermissions("email");
-        loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
+        e=findViewById(R.id.EmailIDTextInputEditText);
+        //fb
+        b=findViewById(R.id.login_button);
+        c=CallbackManager.Factory.create();
+        b.setPermissions(Arrays.asList("Email","user_b"));
+        b.registerCallback(c, new FacebookCallback<LoginResult>() {
             @Override
             public void onSuccess(LoginResult loginResult) {
-                // App code
+
             }
+
             @Override
             public void onCancel() {
-                // App code
+
             }
+
             @Override
-            public void onError(FacebookException exception) {
-                // App code
+            public void onError(FacebookException e) {
+
             }
         });
-
-
-
-
-
-
         GoogleSignInOptions gso =  new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
                 .build();
@@ -90,7 +97,6 @@ public class LoginStart extends AppCompatActivity implements GoogleApiClient.OnC
 
 
 
-
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
 
@@ -98,7 +104,7 @@ public class LoginStart extends AppCompatActivity implements GoogleApiClient.OnC
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        callbackManager.onActivityResult(requestCode, resultCode, data);
+        c.onActivityResult(requestCode, resultCode, data);
         if(requestCode==RC_SIGN_IN){
             GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
             handleSignInResult(result);
@@ -120,4 +126,9 @@ public class LoginStart extends AppCompatActivity implements GoogleApiClient.OnC
         startActivity(intent);
 
     }
-}
+
+
+
+
+        }
+

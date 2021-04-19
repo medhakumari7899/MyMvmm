@@ -2,6 +2,7 @@ package com.example.mymvm.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -41,40 +42,42 @@ public class RegisterActivity extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                process();
+                Intent intent=new Intent(RegisterActivity.this,RegisterCompany.class);
+                startActivity(intent);
+//                process();
             }
         });
 
 
     }
 
-    public void process()
-    {
-        Retrofit retrofit=new Retrofit.Builder()
-                .baseUrl(url)
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
-        RegisterApi registerApi=retrofit.create(RegisterApi.class);
-        Call<RegisterModel> call=registerApi.adddata(firstname.getText().toString(),lastname.getText().toString(),email.getText().toString(),
-                password.getText().toString(),phoneno.getText().toString(),address.getText().toString(), dateofbirth.getText().toString(),citizenship.getText().toString());
-
-        call.enqueue(new Callback<RegisterModel>() {
-            @Override
-            public void onResponse(Call<RegisterModel> call, Response<RegisterModel> response) {
-                firstname.setText("");
-                lastname.setText("");
-                email.setText("");
-                password.setText("");
-                phoneno.setText("");
-                address.setText("");
-                dateofbirth.setText("");
-                citizenship.setText("");
-            }
-
-            @Override
-            public void onFailure(Call<RegisterModel> call, Throwable t) {
-
-            }
-        });
-    }
+//    public void process()
+//    {
+//        Retrofit retrofit=new Retrofit.Builder()
+//                .baseUrl(url)
+//                .addConverterFactory(GsonConverterFactory.create())
+//                .build();
+//        RegisterApi registerApi=retrofit.create(RegisterApi.class);
+//        Call<RegisterModel> call=registerApi.adddata(firstname.getText().toString(),lastname.getText().toString(),email.getText().toString(),
+//                password.getText().toString(),phoneno.getText().toString(),address.getText().toString(), dateofbirth.getText().toString(),citizenship.getText().toString());
+//
+//        call.enqueue(new Callback<RegisterModel>() {
+//            @Override
+//            public void onResponse(Call<RegisterModel> call, Response<RegisterModel> response) {
+//                firstname.setText("");
+//                lastname.setText("");
+//                email.setText("");
+//                password.setText("");
+//                phoneno.setText("");
+//                address.setText("");
+//                dateofbirth.setText("");
+//                citizenship.setText("");
+//            }
+//
+//            @Override
+//            public void onFailure(Call<RegisterModel> call, Throwable t) {
+//
+//            }
+//        });
+//    }
 }

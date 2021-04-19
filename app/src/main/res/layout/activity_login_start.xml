@@ -6,8 +6,7 @@
     android:background="#f0ebef"
     android:orientation="vertical"
     android:layout_height="match_parent"
-    tools:context=".LoginStart">
-
+    tools:context=".Activity.LoginStart">
     <ImageView
         android:layout_width="@dimen/_100sdp"
         android:layout_centerHorizontal="true"
@@ -15,8 +14,7 @@
         android:layout_marginTop="@dimen/_60sdp"
         android:src="@drawable/ic_baseline_person_24"
         android:layout_height="@dimen/_100sdp"/>
-
-        <com.google.android.material.textfield.TextInputEditText
+    <com.google.android.material.textfield.TextInputEditText
             android:layout_width="wrap_content"
             android:layout_below="@+id/img"
             android:layout_marginLeft="@dimen/_20sdp"
@@ -30,7 +28,6 @@
             android:textColorHint="#7C6A6A"
             android:hint="Email"
             android:layout_height="wrap_content"/>
-
     <com.google.android.material.textfield.TextInputEditText
         android:layout_width="wrap_content"
         android:layout_below="@+id/EmailIDTextInputEditText"
@@ -52,7 +49,7 @@
         android:orientation="vertical"
         android:layout_height="wrap_content">
 
-    <TextView
+        <TextView
         android:layout_width="wrap_content"
         android:text="Forgot Password?"
         android:textSize="@dimen/_12sdp"
@@ -69,9 +66,9 @@
             android:layout_width="360dp"
             android:layout_height="52dp"
             android:elevation="@dimen/_2sdp"
-           android:layout_marginLeft="@dimen/_20sdp"
-           android:layout_marginRight="@dimen/_20sdp"
-           android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_30sdp"
             android:layout_below="@id/passwordIDTextInputEditText"
             android:id="@+id/cv">
             <TextView
@@ -91,35 +88,19 @@
         android:orientation="horizontal"
         android:layout_below="@+id/cv"
         android:id="@+id/rl"
-        android:gravity="center"
         android:layout_marginTop="@dimen/_30sdp"
         android:layout_marginLeft="@dimen/_20sdp"
         android:layout_marginRight="@dimen/_20sdp"
         android:layout_height="52dp">
 
-        <ImageView
-            android:layout_width="@dimen/_30sdp"
-            android:src="@drawable/facebook"
-            android:id="@+id/facebook"
-            android:layout_height="@dimen/_30sdp"/>
-
-        <com.facebook.login.widget.LoginButton
-            android:id="@+id/login_button"
-            android:layout_marginRight="@dimen/_20sdp"
-            android:layout_width="@dimen/_20sdp"
-            android:layout_height="@dimen/_20sdp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="30dp"
-            android:layout_marginBottom="30dp" />
-
         <com.google.android.gms.common.SignInButton
-            android:layout_width="@dimen/_30sdp"
-            android:layout_height="@dimen/_30sdp"
             android:id="@+id/sign_in_button"
-            android:layout_marginLeft="20dp"
-            android:background="@drawable/google"
-            android:layout_toRightOf="@+id/facebook"
-            >
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="119dp"
+            android:layout_marginRight="119dp">
 
         </com.google.android.gms.common.SignInButton>
 
@@ -131,8 +112,8 @@
     android:id="@+id/linear1"
      android:layout_marginTop="@dimen/_10sdp"
     android:layout_below="@+id/rl"
-     android:gravity="center"
     android:orientation="vertical"
+     android:gravity="center"
     android:layout_height="wrap_content">
 
      <TextView
@@ -143,7 +124,6 @@
          android:textColor="#2E1D1D"
          android:id="@+id/arhacc"
          android:padding="@dimen/_5sdp"
-         android:layout_gravity="right"
          android:layout_height="wrap_content"/>
 
     <TextView
@@ -157,5 +137,17 @@
         android:padding="@dimen/_5sdp"
         android:layout_height="wrap_content"/>
 </RelativeLayout>
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/flogin_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="86dp"
+        android:layout_marginRight="86dp" />
 
 </RelativeLayout>

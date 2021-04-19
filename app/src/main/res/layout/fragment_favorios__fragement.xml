@@ -1,14 +1,232 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#f0ebef"
+    android:fillViewport="true"
     android:layout_height="match_parent"
-    tools:context=".Fragement.Favorios_Fragement">
+    tools:context=".Activity.RegisterActivity">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical"
+        android:layout_height="match_parent">
 
-</FrameLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/rl"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:id="@+id/backarrow"
+                android:padding="@dimen/_5sdp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:layout_marginStart="@dimen/_20sdp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_15sdp"
+                android:padding="@dimen/_5sdp"
+                android:textColor="#000"
+                android:layout_centerHorizontal="true"
+                android:text="Employee Information"/>
+        </RelativeLayout>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="360dp"
+            android:layout_below="@+id/rl"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/rectangle_2"
+            android:padding="@dimen/_10sdp"
+            android:id="@+id/firstnameIDTextInputEditText"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:textColor="#7C6A6A"
+            android:textColorHint="#7C6A6A"
+            android:hint="First Name"
+            android:layout_height="52dp"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="360dp"
+            android:layout_below="@+id/firstnameIDTextInputEditText"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/rectangle_2"
+            android:padding="@dimen/_10sdp"
+            android:id="@+id/lastnameIDTextInputEditText"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:textColor="#7C6A6A"
+            android:textColorHint="#7C6A6A"
+            android:hint="Last Name"
+            android:layout_height="52dp"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="360dp"
+            android:layout_below="@+id/lastnameIDTextInputEditText"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/rectangle_2"
+            android:padding="@dimen/_10sdp"
+            android:id="@+id/emailaddressIDTextInputEditText"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:textColor="#7C6A6A"
+            android:textColorHint="#7C6A6A"
+            android:hint="E-mail Address"
+            android:layout_height="52dp"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="360dp"
+            android:layout_below="@+id/emailaddressIDTextInputEditText"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/rectangle_2"
+            android:padding="@dimen/_10sdp"
+            android:id="@+id/passWordIDTextInputEditText"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:textColor="#7C6A6A"
+            android:textColorHint="#7C6A6A"
+            android:hint="Phone Number"
+            android:layout_height="52dp"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="360dp"
+            android:layout_below="@+id/passWordIDTextInputEditText"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/rectangle_2"
+            android:padding="@dimen/_10sdp"
+            android:id="@+id/phonenumberIDTextInputEditText"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:textColor="#7C6A6A"
+            android:textColorHint="#7C6A6A"
+            android:hint="Date Of Birth"
+            android:layout_height="52dp"/>
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="360dp"
+            android:layout_below="@+id/phonenumberIDTextInputEditText"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/rectangle_2"
+            android:padding="@dimen/_10sdp"
+            android:id="@+id/addressIDTextInputEditText"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:textColor="#7C6A6A"
+            android:textColorHint="#7C6A6A"
+            android:hint="Current City"
+            android:layout_height="52dp"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="360dp"
+            android:layout_below="@+id/addressIDTextInputEditText"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/rectangle_2"
+            android:padding="@dimen/_10sdp"
+            android:id="@+id/dateofbirthIDTextInputEditText"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:textColor="#7C6A6A"
+            android:textColorHint="#7C6A6A"
+            android:hint="Highest Carrier Level"
+            android:layout_height="52dp"/>
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="360dp"
+            android:layout_below="@+id/dateofbirthIDTextInputEditText"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/rectangle_2"
+            android:padding="@dimen/_10sdp"
+            android:id="@+id/citizenshipIDTextInputEditText"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:textColor="#7C6A6A"
+            android:textColorHint="#7C6A6A"
+            android:hint="Total year of experiance"
+            android:layout_height="52dp"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="360dp"
+            android:layout_below="@+id/citizenshipIDTextInputEditText"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/rectangle_2"
+            android:padding="@dimen/_10sdp"
+            android:id="@+id/totalyearofexperiance"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:textColor="#7C6A6A"
+            android:textColorHint="#7C6A6A"
+            android:hint="Total year of experiance"
+            android:layout_height="52dp"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="360dp"
+            android:layout_below="@+id/totalyearofexperiance"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/rectangle_2"
+            android:padding="@dimen/_10sdp"
+            android:id="@+id/ddd"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:textColor="#7C6A6A"
+            android:textColorHint="#7C6A6A"
+            android:hint="Total year of experiance"
+            android:layout_height="52dp"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="360dp"
+            android:layout_below="@+id/ddd"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/rectangle_2"
+            android:padding="@dimen/_10sdp"
+            android:id="@+id/and"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:textColor="#7C6A6A"
+            android:textColorHint="#7C6A6A"
+            android:hint="Total year of experiance"
+            android:layout_height="52dp"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="360dp"
+            android:layout_below="@+id/and"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/rectangle_2"
+            android:padding="@dimen/_10sdp"
+            android:id="@+id/bnd"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:textColor="#7C6A6A"
+            android:textColorHint="#7C6A6A"
+            android:hint="Total year of experiance"
+            android:layout_height="52dp"/>
+
+
+        <Button
+            android:layout_width="360dp"
+            android:background="@drawable/backgroun_set"
+            android:id="@+id/register"
+            android:layout_below="@id/bnd"
+            android:text="Register Now"
+            android:textSize="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:textColor="#FFF"
+            android:textAllCaps="false"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginBottom="30dp"
+            android:padding="@dimen/_7sdp"
+            android:layout_height="52dp"/>
+    </RelativeLayout>
+</ScrollView>

@@ -5,10 +5,40 @@
     android:layout_height="match_parent"
     tools:context=".Fragement.Home_Fragement">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:background="@drawable/rectangle_2"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/date_array"
+            android:id="@+id/mprofilespinnerdate"
+            android:layout_weight="1"
+            />
+
+        <Spinner
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/month_array"
+            android:id="@+id/mprofilespinnermonth"
+            android:layout_weight="1"
+            />
+        <Spinner
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/year_array"
+            android:id="@+id/mprofilespinneryear"
+            />
+
+    </LinearLayout>
 
 </FrameLayout>

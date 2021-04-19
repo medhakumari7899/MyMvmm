@@ -38,39 +38,41 @@ public class RegisterCompany extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                process();
+                Intent intent=new Intent(RegisterCompany.this,MainActivity.class);
+                startActivity(intent);
+//                process();
             }
         });
     }
 
-    public void process()
-    {
-        Retrofit retrofit=new Retrofit.Builder()
-                .baseUrl(url)
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
-        CompanyRegisterApi api=retrofit.create(CompanyRegisterApi.class);
-        Call<RegisterCompanyModel> call=api.adddata(name.getText().toString(),country.getText().toString(),streetaddress.getText().toString(),mainbussinessactivities.getText().toString(),shareholders.getText().toString(),percentages.getText().toString());
-        call.enqueue(new Callback<RegisterCompanyModel>() {
-            @Override
-            public void onResponse(Call<RegisterCompanyModel> call, Response<RegisterCompanyModel> response) {
-                name.setText("");
-                country.setText("");
-                streetaddress.setText("");
-                mainbussinessactivities.setText("");
-                shareholders.setText("");
-                percentages.setText("");
-
-                Toast.makeText(getApplicationContext(),response.toString(),Toast.LENGTH_LONG).show();
-            }
-
-            @Override
-            public void onFailure(Call<RegisterCompanyModel> call, Throwable t) {
-                Toast.makeText(getApplicationContext(),t.toString(),Toast.LENGTH_LONG).show();
-
-            }
-        });
-
-    }
+//    public void process()
+//    {
+//        Retrofit retrofit=new Retrofit.Builder()
+//                .baseUrl(url)
+//                .addConverterFactory(GsonConverterFactory.create())
+//                .build();
+//        CompanyRegisterApi api=retrofit.create(CompanyRegisterApi.class);
+//        Call<RegisterCompanyModel> call=api.adddata(name.getText().toString(),country.getText().toString(),streetaddress.getText().toString(),mainbussinessactivities.getText().toString(),shareholders.getText().toString(),percentages.getText().toString());
+//        call.enqueue(new Callback<RegisterCompanyModel>() {
+//            @Override
+//            public void onResponse(Call<RegisterCompanyModel> call, Response<RegisterCompanyModel> response) {
+//                name.setText("");
+//                country.setText("");
+//                streetaddress.setText("");
+//                mainbussinessactivities.setText("");
+//                shareholders.setText("");
+//                percentages.setText("");
+//
+//                Toast.makeText(getApplicationContext(),response.toString(),Toast.LENGTH_LONG).show();
+//            }
+//
+//            @Override
+//            public void onFailure(Call<RegisterCompanyModel> call, Throwable t) {
+//                Toast.makeText(getApplicationContext(),t.toString(),Toast.LENGTH_LONG).show();
+//
+//            }
+//        });
+//
+//    }
 
     }

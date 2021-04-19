@@ -1,4 +1,4 @@
-package com.example.mymvm;
+package com.example.mymvm.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.example.mymvm.R;
 
 public class MailActivity extends AppCompatActivity implements View.OnClickListener {
     EditText inSubject, inBody;

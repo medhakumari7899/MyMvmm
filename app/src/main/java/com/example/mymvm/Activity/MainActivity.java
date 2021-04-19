@@ -1,4 +1,4 @@
-package com.example.mymvm;
+package com.example.mymvm.Activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +14,7 @@ import com.example.mymvm.Fragement.Discover_Fragement;
 import com.example.mymvm.Fragement.Favorios_Fragement;
 import com.example.mymvm.Fragement.Home_Fragement;
 import com.example.mymvm.Fragement.Profile_Fragement;
+import com.example.mymvm.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {

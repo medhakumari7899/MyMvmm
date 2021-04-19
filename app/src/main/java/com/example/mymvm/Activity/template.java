@@ -1,8 +1,10 @@
-package com.example.mymvm;
+package com.example.mymvm.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.mymvm.R;
 
 public class template extends AppCompatActivity {
 

@@ -123,5 +123,44 @@ Email
         <item>30</item>
         <item>31</item>
     </string-array>
+    <string-array name="Carrier_level">
+        <item>Select an Option</item>
+        <item>No Experiance/Student</item>
+        <item>Fresher</item>
+        <item>1-2 Year Experiance</item>
+        <item>2-5 Year Experiance</item>
+        <item>5+ Year Experiance</item>
+
+    </string-array>
+    <string-array name="industry">
+        <item>Select an Option</item>
+        <item>Accounting</item>
+        <item>Chemical Engineering</item>
+        <item>Community &amp; Social Service</item>
+        <item>Construction</item>
+        <item>Customer Service</item>
+        <item>Education &amp; Instruction</item>
+        <item>Electrical Engineering</item>
+        <item>Human Resources</item>
+        <item>Industrial Engineering</item>
+        <item>IT Operations &amp; Helpdesk</item>
+        <item>Logistic Support</item>
+        <item>Management</item>
+        <item>Marketing</item>
+        <item>Mechanical Engineering</item>
+        <item>Project Management</item>
+        <item>Software Development</item>
+        <item>Technology</item>
+        <item>Internet, Ecommerce</item>
+        <item>IT-Hardware &amp; Networking</item>
+    </string-array>
+    <string-array name="languageproficiency">
+        <item>Select</item>
+        <item>Expert</item>
+        <item>Fluent</item>
+        <item>Intermidiate</item>
+        <item>Beginner</item>
+
+    </string-array>
 
 </resources>

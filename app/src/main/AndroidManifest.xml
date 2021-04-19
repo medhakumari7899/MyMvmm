@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyMvm">
-        <activity android:name=".EmployeeInformation"></activity>
+        <activity android:name=".Activity.EmployeeInformation"></activity>
         <activity android:name=".Activity.ScanBarCodeActivity" />
         <activity android:name=".Activity.MailActivity" />
         <activity android:name=".Activity.MainScanCode" />

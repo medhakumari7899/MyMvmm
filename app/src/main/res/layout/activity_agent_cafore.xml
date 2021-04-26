@@ -32,19 +32,9 @@
                 android:padding="@dimen/_5sdp"
                 android:textColor="#000"
                 android:layout_centerHorizontal="true"
-                android:text="Employee Information"/>
+                android:text="Agent Cafore"/>
         </RelativeLayout>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:fontFamily="@font/antonio"
-            android:gravity="center"
-            android:padding="@dimen/_5sdp"
-            android:text="Personal Details"
-            android:textColor="#2196F3"
-            android:textSize="@dimen/_15sdp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -54,11 +44,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="First Name (Required)"
+                android:text="Direction Generale des Impots"
                 android:textColor="#000"
                 android:fontFamily="@font/lateefregular"
-                android:layout_marginTop="@dimen/_25sdp"
-                android:textSize="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textSize="@dimen/_15sdp"
                 android:layout_marginLeft="@dimen/_20sdp"/>
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="360dp"
@@ -75,11 +65,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Last Name (Required)"
+                android:text="Direction de reattachement"
                 android:fontFamily="@font/lateefregular"
                 android:textColor="#000"
                 android:layout_marginTop="@dimen/_25sdp"
-                android:textSize="@dimen/_13sdp"
+                android:textSize="@dimen/_15sdp"
                 android:layout_marginLeft="@dimen/_20sdp"/>
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="360dp"
@@ -93,63 +83,11 @@
                 android:textColor="#7C6A6A"
                 android:textColorHint="#7C6A6A"
                 android:layout_height="52dp"/>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Date Of Birth (Required)"
-                android:fontFamily="@font/lateefregular"
-                android:textColor="#000"
-                android:layout_marginTop="@dimen/_25sdp"
-                android:textSize="@dimen/_13sdp"
-                android:layout_marginLeft="@dimen/_20sdp"/>
-            <LinearLayout
-                android:layout_width="360dp"
-                android:layout_height="52dp"
-                android:weightSum="3"
-                android:layout_marginLeft="@dimen/_20sdp"
-                android:layout_marginRight="@dimen/_20sdp"
-                android:background="@drawable/rectangle_2"
-                android:layout_marginTop="@dimen/_5sdp"
-                android:orientation="horizontal">
-
-
-                <Spinner
-                    android:padding="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:entries="@array/date_array"
-                    android:fontFamily="@font/lateefregular"
-                    android:id="@+id/emp_dobdate"
-                    android:theme="@style/SpinnerTheme"
-                    android:layout_weight="1"
-                    />
-
-                <Spinner
-                    android:padding="10dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:entries="@array/month_array"
-                    android:fontFamily="@font/lateefregular"
-                    android:theme="@style/SpinnerTheme"
-                    android:id="@+id/emp_dobmonth"
-                    android:layout_weight="1"
-                    />
-                <Spinner
-                    android:padding="10dp"
-                    android:layout_weight="1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/lateefregular"
-                    android:theme="@style/SpinnerTheme"
-                    android:entries="@array/year_array"
-                    android:id="@+id/emp_dobyear"
-                    />
-
-            </LinearLayout>
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Current City (Required)"
+                android:text=""
                 android:textColor="#000"
                 android:fontFamily="@font/lateefregular"
                 android:layout_marginTop="@dimen/_25sdp"

@@ -16,15 +16,16 @@ import com.google.android.material.textfield.TextInputEditText;
 
 public class Home_Fragement extends Fragment {
     TextInputEditText firstname,lastname,currentcity,postalcode,phonenumber,emailaddress,skypelinkedin,highestqualification,university,passingyear;
-    TextInputEditText totalyearofexperiance,jobtitle,company,companycity,discription,language;
+    TextInputEditText totalyearofexperiance,jobtitle,company,companycity,discription,language,previousctc,expectedctc;
     Spinner day,month,year,highestcarrierlavel,industry,frommomth,fromyear,tomonth,toyear,proficiency;
     Button registerbtn;
+
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view= inflater.inflate(R.layout.fragment_home__fragement, container, false);
+        View view = inflater.inflate(R.layout.fragment_home__fragement, container, false);
         firstname=view.findViewById(R.id.emp_firstname);
         lastname=view.findViewById(R.id.emp_lastname);
         day=view.findViewById(R.id.emp_dobdate);
@@ -51,9 +52,9 @@ public class Home_Fragement extends Fragment {
         discription=view.findViewById(R.id.emp_discription);
         language=view.findViewById(R.id.emp_language);
         proficiency=view.findViewById(R.id.emp_proficiency);
-
-
-
+        previousctc=view.findViewById(R.id.emp_prevctc);
+        expectedctc=view.findViewById(R.id.emp_expctc);
+        registerbtn=view.findViewById(R.id.emp_register_btn);
 
 
         return view;

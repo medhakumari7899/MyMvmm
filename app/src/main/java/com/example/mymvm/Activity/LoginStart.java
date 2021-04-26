@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,7 +25,7 @@ import com.google.android.gms.common.api.GoogleApiClient;
 
 public class LoginStart extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener {
 
-    SignInButton signInButton;
+    ImageView imageView;
     private GoogleApiClient googleApiClient;
     TextView textView;
     CallbackManager callbackManager;
@@ -68,8 +69,8 @@ public class LoginStart extends AppCompatActivity implements GoogleApiClient.OnC
 
 
 
-        signInButton=(SignInButton)findViewById(R.id.sign_in_button);
-        signInButton.setOnClickListener(new View.OnClickListener() {
+        imageView=findViewById(R.id.sign_in_button);
+        imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = Auth.GoogleSignInApi.getSignInIntent(googleApiClient);

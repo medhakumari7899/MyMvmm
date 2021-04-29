@@ -32,7 +32,7 @@
                 android:padding="@dimen/_5sdp"
                 android:textColor="#000"
                 android:layout_centerHorizontal="true"
-                android:text="Agent Cafore"/>
+                android:text="Promoteur"/>
         </RelativeLayout>
 
 
@@ -137,27 +137,6 @@
                 android:gravity="center"
                 android:textColor="#2196F3"
                 />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Commune"
-                android:textColor="#000"
-                android:fontFamily="@font/lateefregular"
-                android:layout_marginTop="@dimen/_20sdp"
-                android:textSize="@dimen/_15sdp"
-                android:layout_marginLeft="@dimen/_20sdp"/>
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="360dp"
-                android:layout_marginLeft="@dimen/_20sdp"
-                android:layout_marginRight="@dimen/_20sdp"
-                android:background="@drawable/rectangle_2"
-                android:padding="@dimen/_10sdp"
-                android:id="@+id/emp_phoneno"
-                android:textSize="@dimen/_12sdp"
-                android:layout_marginTop="@dimen/_5sdp"
-                android:textColor="#7C6A6A"
-                android:textColorHint="#7C6A6A"
-                android:layout_height="52dp"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
